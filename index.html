@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio de Melanie Juárez Ramírez — JuHo, diseñadora gráfica e ilustradora."><title>JuHo — Portafolio 2026</title>
+  <style>
+    @font-face{font-family:Gill;src:url('tipografias/Gill Sans Display MT Pro Bold.otf')}@font-face{font-family:Oscine;src:url('tipografias/Oscine_Trial_It.ttf');font-style:italic}@font-face{font-family:Oscine;src:url('tipografias/Oscine_Trial_BdIt.ttf');font-style:italic;font-weight:700}@font-face{font-family:Sauce;src:url('tipografias/OpenSauceTwo-Regular.ttf')}@font-face{font-family:Sauce;src:url('tipografias/OpenSauceTwo-SemiBold.ttf');font-weight:600}
+    :root{--ink:#141415;--paper:#eaebeb;--blue:#0a369d;--aqua:#3bc1ae;--sky:#73c2fb;--line:rgba(234,235,235,.35);--max:1280px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font:400 16px/1.55 Sauce,sans-serif}a{color:inherit}img{display:block;max-width:100%}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Gill,sans-serif}.shell{width:min(calc(100% - 40px),var(--max));margin:auto}.skip{position:fixed;top:8px;left:8px;z-index:20;padding:10px;background:var(--paper);color:var(--ink);transform:translateY(-150%)}.skip:focus{transform:none}
+    .nav{position:absolute;z-index:10;width:100%;border-bottom:1px solid var(--line);background:rgba(20,20,21,.3)}.nav div{min-height:62px;display:flex;align-items:center;gap:18px;font:italic 15px/1 Oscine,sans-serif}.nav a{text-decoration:none}.nav a:hover{color:var(--aqua)}.nav-brand{margin-right:auto}.nav-links{display:flex;align-items:center;gap:17px;margin:0;padding:0;list-style:none}.menu-button{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid var(--paper);background:transparent;color:var(--paper);font:italic 15px/1 Oscine,sans-serif;cursor:pointer}.menu-button:hover{border-color:var(--aqua);color:var(--aqua)}
+    .hero{position:relative;isolation:isolate;min-height:820px;overflow:hidden;background:var(--blue)}.hero:before{content:'';position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,rgba(4,21,66,.9),rgba(10,54,157,.22) 60%,rgba(4,21,66,.54)),url('Assets/ilustracion-principal.jpg') center/cover}.hero:after{content:'';position:absolute;z-index:-1;right:0;bottom:0;left:0;height:35%;background:linear-gradient(transparent,var(--ink))}.hero .shell{position:relative;min-height:820px;padding:112px 0 48px}.overline,.kicker{margin-bottom:12px;color:var(--aqua);font:italic 17px/1 Oscine,sans-serif;letter-spacing:.08em}.hero-copy{position:relative;z-index:2;max-width:570px}.hero h1{margin-bottom:24px;font-size:clamp(72px,8vw,116px);line-height:.76;letter-spacing:-.045em;text-transform:uppercase}.hero h1 span{display:block;padding-left:clamp(25px,7vw,110px);color:var(--aqua)}.intro{max-width:410px;font-size:clamp(17px,1.8vw,22px)}.portrait{position:absolute;z-index:2;top:142px;right:2%;width:min(45vw,540px);margin:0}.portrait img{width:100%;height:auto;object-fit:contain}.hero-foot{position:absolute;z-index:3;right:0;bottom:0;left:0;display:flex;justify-content:space-between;gap:20px;font:italic 14px/1.3 Oscine,sans-serif}.hero-foot a{color:var(--aqua);text-decoration:none}
+    .section{padding:100px 0}.paper{background:var(--paper);color:var(--ink)}.paper .kicker{color:#1a9a8a}h2{max-width:12ch;margin-bottom:34px;font-size:clamp(48px,7vw,92px);line-height:.86;letter-spacing:-.035em;text-transform:uppercase}h3{margin-bottom:12px;font:italic 24px/1.1 Oscine,sans-serif}.about{display:grid;grid-template-columns:1fr .9fr;gap:clamp(38px,8vw,120px);align-items:center}.about p{max-width:60ch;font-size:18px}.facts{margin-top:34px;border-top:1px solid var(--ink)}.fact{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--ink)}.fact b{color:var(--blue);font:italic 15px/1.3 Oscine,sans-serif}.about-art{position:relative;min-height:430px;overflow:hidden;background:var(--blue)}.about-art img{width:100%;height:100%;object-fit:cover;opacity:.8;mix-blend-mode:screen}.about-art span{position:absolute;right:20px;bottom:20px;left:20px;color:var(--paper);font:italic 19px/1.1 Oscine,sans-serif}.likes{margin-top:66px;padding-top:18px;border-top:1px solid var(--ink)}.likes-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:18px}.likes-head p{margin:0;color:var(--blue);font:italic 17px/1 Oscine,sans-serif}.likes-grid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:8px}.like{position:relative;min-height:158px;overflow:hidden;background:var(--ink)}.like img{width:100%;height:100%;object-fit:cover}.like:first-child{min-height:244px;grid-row:span 2}.like span{position:absolute;right:0;bottom:0;left:0;padding:7px 8px;background:var(--ink);color:var(--paper);font:italic 13px/1.15 Oscine,sans-serif}
+    .skills{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.skills h2{margin-bottom:0}.tags{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 40px;padding:0;list-style:none}.tags li{padding:8px 11px;border:1px solid var(--line);font:italic 15px/1 Oscine,sans-serif}.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:0 24px}.tool{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.tool-name{display:flex;align-items:center;gap:11px}.tool img{width:34px;height:34px;object-fit:contain}.tool span:last-child{color:var(--aqua);font:italic 15px/1.3 Oscine,sans-serif}.language{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}.language b{width:100px;color:var(--aqua);font:italic 16px/1.3 Oscine,sans-serif}
+    .projects{border-top:1px solid var(--ink)}.project{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(26px,6vw,92px);padding:42px 0;border-bottom:1px solid var(--ink)}.project:nth-child(even) .project-image{order:2}.project-image{min-height:310px;overflow:hidden;background:var(--blue)}.project-image img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.project:hover img{transform:scale(1.045)}.contain{background:#d9dddd}.contain img{object-fit:contain}.project-type{margin-bottom:10px;color:#1a9a8a;font:italic 16px/1 Oscine,sans-serif}.project h3{color:var(--blue);font:700 clamp(34px,4vw,56px)/.9 Gill,sans-serif;text-transform:uppercase}.award{display:inline-block;margin-top:8px;padding:7px 10px;background:var(--blue);color:var(--paper);font:italic 14px/1.2 Oscine,sans-serif}
+    .personal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.piece{position:relative;min-height:285px;overflow:hidden;background:var(--blue)}.piece:first-child{grid-column:span 2}.piece img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.piece:hover img{transform:scale(1.04)}figcaption{position:absolute;right:0;bottom:0;left:0;padding:12px;background:rgba(20,20,21,.92);font:italic 15px/1.2 Oscine,sans-serif}.writing{margin-top:42px;padding:30px;border:1px solid var(--aqua);background:var(--blue)}.writing p:last-child{margin-bottom:0}.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}.links{display:grid;gap:14px;margin-top:28px}.links a{color:var(--blue);font:italic clamp(19px,2.6vw,29px)/1.2 Oscine,sans-serif;text-decoration:none}.links a:hover{color:#1a9a8a}.mark{min-height:300px;display:grid;place-items:center;overflow:hidden;background:var(--blue)}.mark img{width:130%;max-width:none;opacity:.9;mix-blend-mode:screen}footer{padding:22px 0;border-top:1px solid var(--line);color:#95959d;font:italic 14px/1.3 Oscine,sans-serif}
+    @media(max-width:900px){.nav-links{position:absolute;top:62px;right:0;left:0;display:none;align-items:stretch;gap:0;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--ink)}.nav-links.is-open{display:grid}.nav-links a{display:block;min-height:44px;padding:13px 0;color:var(--paper)}.nav-links a:hover{color:var(--aqua)}}@media(max-width:760px){.shell{width:min(calc(100% - 28px),var(--max))}.nav div{font-size:13px}.nav-brand{max-width:165px}.hero,.hero .shell{min-height:760px}.hero .shell{padding-top:135px}.hero h1{font-size:clamp(69px,20vw,100px)}.portrait{top:275px;right:-8%;width:72vw}.hero-foot{display:block}.about,.skills,.project,.contact{grid-template-columns:1fr}.section{padding:70px 0}.about-art{min-height:300px}.likes-grid{grid-template-columns:repeat(3,1fr)}.like:first-child{min-height:205px;grid-column:span 2;grid-row:span 1}.project:nth-child(even) .project-image{order:0}.project-image{min-height:250px}.personal{grid-template-columns:1fr 1fr}.piece{min-height:210px}.contact .mark{min-height:190px}}@media(max-width:430px){.nav span{max-width:130px}.tools{grid-template-columns:1fr}.likes-grid{grid-template-columns:1fr 1fr}.like:first-child{grid-column:span 2}.personal{grid-template-columns:1fr}.piece:first-child{grid-column:auto}.fact{grid-template-columns:85px 1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    /* Ajustes de composición: navegación persistente, hero alineado y cinta de referencias. */
+    .nav{position:fixed;background:var(--ink)}
+    .hero .shell{display:flex;align-items:center}
+    .hero-copy{margin-bottom:20px}
+    .portrait{top:50%;transform:translateY(-50%)}
+    .likes{overflow:hidden}
+    .likes-head{margin-bottom:18px}
+    .likes-grid{display:flex;width:max-content;gap:10px;animation:reference-scroll 54s linear infinite}
+    .like,.like:first-child{display:block;flex:0 0 307px;min-height:307px;height:307px;grid-column:auto;grid-row:auto;background:var(--ink)}
+    .like img{width:100%;height:100%;object-fit:contain}
+    .like span{display:none}
+    .likes:hover .likes-grid{animation-play-state:paused}
+    @keyframes reference-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:760px){.hero .shell{display:block}.portrait{top:300px;transform:none}.like,.like:first-child{flex-basis:124px;min-height:124px;height:124px}.likes-grid{animation-duration:42s}}
+    .menu-button{display:none!important}
+    .hero h1 .juho{display:block;padding-left:0;color:var(--paper);font-size:1.45em}
+    .hero h1 .portfolio-label{display:block;padding-left:clamp(24px,5vw,80px);font-size:.56em;color:var(--aqua)}
+    .hero-copy{width:min(44%,520px);margin-left:auto;text-align:right}.hero h1 .portfolio-label{padding-left:0}.portrait{right:auto;left:0;width:min(36vw,476px)}
+    .portfolio-label{position:relative}.hero h1 .portfolio-letter-o{position:relative;display:inline-block;padding-left:0;color:inherit}.portfolio-letter-o::after{content:'✦';position:absolute;top:50%;left:50%;color:var(--aqua);font:normal 1.45em/1 Gill,sans-serif;transform:translate(-50%,-52%);text-shadow:0 0 0 var(--aqua)}
+    .section{padding:30px 0}
+    .hero-foot{right:10px;left:10px;align-items:end;font:italic 700 clamp(20px,2.1vw,30px)/1.1 Oscine,sans-serif}
+    .hero-foot p{margin:0;white-space:nowrap}.hero-foot a{max-width:15ch;text-align:right}
+    .skills{display:block}
+    .skills>div:first-child{margin-bottom:48px}
+    .skills h3[style]{margin-top:54px!important;font-size:clamp(29px,3vw,38px)}
+    .language{align-items:baseline;gap:28px;padding:17px 0;font-size:clamp(18px,1.7vw,22px)}
+    .language b{width:150px;font-size:clamp(19px,1.8vw,23px)}
+    .animations{background:var(--blue)}
+    .animation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .animation-card{min-height:300px;background:transparent;border:0}
+    .animation-card img,.animation-card video{width:100%;height:100%;min-height:300px;object-fit:contain;background:transparent}
+    .work-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+    .work-gallery figure{min-height:240px;margin:0;background:var(--ink);border:1px solid var(--line)}
+    .work-gallery img{width:100%;height:100%;min-height:240px;object-fit:contain}
+    footer .shell{display:grid;gap:22px}
+    .footer-quote{max-width:25ch;justify-self:end;text-align:right;color:var(--paper);font:700 clamp(34px,5vw,72px)/.95 Gill,sans-serif;letter-spacing:-.03em}
+    .mark img{width:100%;height:100%;object-fit:contain;mix-blend-mode:normal;opacity:1}
+    .intro{font-weight:600}
+    .about-art span{display:none}
+    .project .work-gallery{grid-column:1/-1;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:4px}
+    .project .work-gallery figure,.project .work-gallery img{min-height:170px}
+    .animation-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:start}
+    .animation-card,.animation-card img,.animation-card video{min-height:185px;height:185px}
+    .about-art,.mark{background:transparent;border:0}
+    .about-art img{object-fit:contain;mix-blend-mode:normal;opacity:1}
+    .project--hibridum{grid-template-columns:.8fr 1.2fr}
+    .project--hibridum .work-gallery{display:grid;grid-column:2;grid-row:1;grid-template-columns:1fr 1.25fr;grid-template-rows:repeat(2,minmax(0,1fr));height:590px;gap:14px}
+    .project--hibridum .work-gallery>*:first-child{grid-row:span 2}
+    .project--hibridum .work-gallery figure,.project--hibridum .work-gallery img,.project--hibridum .work-gallery .project-image{min-height:0;height:100%}
+    .project--hibridum .work-gallery .project-image img{object-fit:cover}
+    .animations .animation-grid{grid-template-columns:1.15fr 1fr 1fr;grid-auto-rows:420px;gap:10px}
+    .animations .animation-card,.animations .animation-card img,.animations .animation-card video{min-height:0;height:100%}
+    .animations .animation-card:nth-child(1){grid-row:span 2}
+    .animations .animation-card:nth-child(2){grid-column:span 2}
+    .project--imaginario{grid-template-columns:.8fr 1.2fr}
+    .project--imaginario .work-gallery{display:grid;grid-column:2;grid-row:1;grid-template-columns:1.25fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));height:590px;gap:14px}
+    .project--imaginario .work-gallery>*:first-child{grid-column:1;grid-row:1}
+    .project--imaginario .work-gallery>*:nth-child(2){grid-column:1;grid-row:2}
+    .project--imaginario .work-gallery>*:nth-child(3){grid-column:2;grid-row:1 / span 2}
+    .project--imaginario .work-gallery figure,.project--imaginario .work-gallery img,.project--imaginario .work-gallery .project-image{min-height:0;height:100%}
+    .project--imaginario .work-gallery figure,.project--imaginario .work-gallery .project-image{background:transparent;border:0}
+    .project--imaginario .work-gallery .project-image img{object-fit:contain}
+    .project--avatar{display:block;overflow:hidden}
+    .project--avatar>div:first-child{max-width:560px}
+    .project--avatar .work-gallery{display:flex;width:max-content;gap:14px;margin:15px 0 0;animation:avatar-scroll 44s linear infinite}
+    .project--avatar .work-gallery>*{display:block;flex:0 0 522px;width:522px;height:522px;min-height:522px;margin:0;border:0;background:transparent}
+    .project--avatar .work-gallery img{width:100%;height:100%;min-height:0;object-fit:contain}
+    .project--avatar:hover .work-gallery{animation-play-state:paused}@keyframes avatar-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .divine .project{border-top:1px solid var(--ink)}
+    .divine .work-gallery{grid-template-columns:1.1fr .9fr}
+    .divine .project{grid-template-columns:.7fr 1.3fr}.divine .project-image{min-height:560px}.divine .project-image img{transform:scale(1.08)}
+    .divine .project{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:clamp(20px,5vw,72px);min-height:620px;padding:clamp(34px,6vw,90px);border:0;background:linear-gradient(90deg,rgba(4,21,66,.88),rgba(4,21,66,.3)),url('Assets/Render_Melanielibroazulfinal.png') center/cover}
+    .divine .project>div:first-child{max-width:530px;color:var(--paper)}
+    .divine-art{margin:0}.divine-art img{width:100%;max-height:470px;object-fit:contain}
+    .writing{background:var(--paper);color:var(--ink)}
+    .skies-gallery{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-auto-rows:175px;gap:14px;margin-top:14px}
+    .skies-gallery figure{min-height:0;margin:0;overflow:hidden;background:var(--paper)}
+    .skies-gallery figure:nth-child(1){grid-column:span 2;grid-row:span 2}.skies-gallery figure:nth-child(2){grid-row:span 3}.skies-gallery figure:nth-child(3){grid-row:span 2}.skies-gallery figure:nth-child(5){grid-column:span 2}.skies-gallery img{width:100%;height:100%;object-fit:contain}
+    .writing h4{margin:0 0 9px;color:#1a9a8a;font:italic 18px/1 Oscine,sans-serif}
+    .skies-poster{display:grid;place-items:center;margin:20px 0 0;background:var(--paper)}.skies-poster img{width:min(100%,640px);max-height:780px;object-fit:contain}
+    .animations .animation-card:nth-child(3) img,.animations .animation-card:nth-child(4) video{transform:scale(1.3)}
+    #personales .personal{width:70%}
+    .writing{position:relative;display:block;width:min(100%,620px);min-height:930px;padding:0;overflow:hidden}.skies-poster{position:absolute;inset:0;margin:0}.skies-poster img{width:100%;height:100%;max-height:none;object-fit:contain}.skies-copy{position:absolute;z-index:1;top:32px;left:32px;width:min(70%,440px);padding:24px;background:var(--blue);color:var(--paper)}.skies-copy h3{margin-top:0;color:var(--paper);font-size:clamp(42px,5vw,74px);line-height:.88}.skies-copy h4{color:var(--aqua)}
+    .animations .animation-grid{gap:4px}.animation-card{overflow:hidden}.animation-card img,.animation-card video{object-fit:cover}
+    h2{display:flex;align-items:flex-start;gap:20px}h2::before,h2::after{content:'✦';flex:0 0 auto;color:var(--aqua);font:italic clamp(20px,2.2vw,34px)/1 Oscine,sans-serif;animation:star-twinkle 1.8s ease-in-out infinite alternate}h2::after{content:'✧';animation-delay:-.9s}@keyframes star-twinkle{from{transform:scale(.75);opacity:.58}to{transform:scale(1.2);opacity:1}}
+    .links a{display:flex;align-items:center;gap:12px}.links a::before{content:'✦';color:var(--blue);font:normal 1.05em/1 Gill,sans-serif}.links a:hover::before{color:#1a9a8a}
+    .mark img{animation:contact-float 4s ease-in-out infinite}@keyframes contact-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    @media(max-width:900px){.nav div{gap:10px}.menu-button{display:inline-grid!important}.nav-links{position:absolute;top:62px;right:0;left:0;display:none!important;align-items:stretch;gap:0;margin:0;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--ink)}.nav-links.is-open{display:grid!important}.nav-links li{min-width:0}.nav-links a{display:block;min-height:44px;padding:13px 0;color:var(--paper)}}
+    @media(max-width:760px){.hero-copy{width:100%;margin-left:0;text-align:right}.portrait{right:-2%;left:auto;width:71vw}.like,.like:first-child{flex-basis:198px;min-height:198px;height:198px}.animation-grid,.work-gallery,.skies-gallery{grid-template-columns:1fr}.section{padding:30px 0}.project--hibridum,.project--imaginario,.divine .project{grid-template-columns:1fr}.project--hibridum .work-gallery,.project--imaginario .work-gallery{grid-column:1;grid-row:auto;grid-template-columns:1fr;height:auto}.project--hibridum .work-gallery>*:first-child,.project--imaginario .work-gallery>*:first-child,.project--imaginario .work-gallery>*:nth-child(2),.project--imaginario .work-gallery>*:nth-child(3){grid-column:auto;grid-row:auto;min-height:310px}.project--hibridum .work-gallery figure,.project--hibridum .work-gallery img,.project--hibridum .work-gallery .project-image,.project--imaginario .work-gallery figure,.project--imaginario .work-gallery img,.project--imaginario .work-gallery .project-image{min-height:210px}.project--avatar .work-gallery{grid-template-columns:1fr;margin:0}.project--avatar .work-gallery>*{width:auto;min-height:210px;height:auto}.animations .animation-grid{grid-template-columns:1fr;grid-auto-rows:224px}.animations .animation-card:nth-child(1),.animations .animation-card:nth-child(2){grid-row:auto;grid-column:auto}.animation-card,.animation-card img{min-height:224px;height:224px}.work-gallery figure,.work-gallery img,.skies-gallery figure,.skies-gallery figure:nth-child(n){grid-column:auto;grid-row:auto;min-height:210px}.hero-foot p{white-space:normal}.hero-foot a{text-align:left}.divine .project{min-height:500px}#personales .personal{width:100%;grid-template-columns:repeat(2,1fr)}.writing{width:100%;min-height:auto;padding:30px;overflow:visible;aspect-ratio:auto}.skies-poster{position:static;margin:20px 0 0}.skies-poster img{height:auto}.skies-copy{position:static;width:auto;padding:0;background:transparent;color:var(--ink)}.skies-copy h3{color:var(--ink);font-size:clamp(38px,12vw,64px)}.skies-copy h4{color:#1a9a8a}}
+    @media(max-width:760px){.hero-copy{width:100%;margin-left:0;text-align:left}.hero h1 .portfolio-label{padding-left:clamp(24px,5vw,80px)}.project--avatar .work-gallery{display:grid;width:auto;animation:none}.project--avatar .work-gallery>*{width:auto;min-height:405px;height:405px}.animations .animation-grid{grid-template-columns:1fr;grid-auto-rows:320px}.animations .animation-card:nth-child(1),.animations .animation-card:nth-child(2){grid-row:auto;grid-column:auto}.animation-card,.animation-card img,.animation-card video{min-height:320px;height:320px}#personales .personal{width:100%;grid-template-columns:repeat(3,1fr)}}
+    /* Ajustes de composición solicitados. */
+    .hero-copy{margin-left:auto;text-align:right}.portfolio-label{display:none!important}
+    .project--avatar .work-gallery{display:grid;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:0;animation:none}.project--avatar .work-gallery>*{width:100%;height:auto;min-height:0;aspect-ratio:16/9;margin:0}.project--avatar .work-gallery img{width:100%;height:100%;object-fit:cover}
+    .animations .animation-grid{gap:4px;grid-auto-rows:294px}.animations .animation-card{min-height:0;height:100%;background:transparent}.animations .animation-card img{width:100%;height:100%;min-height:0;object-fit:cover}
+    #personales .personal{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
+    .writing{width:100%;min-height:0;aspect-ratio:1080/1400;padding:0;overflow:hidden}.skies-poster{position:absolute;inset:0;margin:0}.skies-poster img{width:100%;height:100%;object-fit:contain}.skies-copy{position:absolute;top:32px;left:32px;width:min(70%,440px);padding:24px;background:var(--blue);color:var(--paper)}
+    footer{font-size:7px}.footer-quote{font-size:clamp(17px,2.5vw,36px)}
+    @media(max-width:760px){.hero-copy{text-align:right}.project--avatar .work-gallery{grid-template-columns:1fr}.animations .animation-grid{grid-auto-rows:224px}.animations .animation-card,.animations .animation-card img{min-height:224px;height:224px}.writing{width:100%;min-height:0;aspect-ratio:1080/1400;padding:0;overflow:hidden}.skies-poster{position:absolute;inset:0;margin:0}.skies-copy{position:absolute;top:20px;left:20px;width:min(75%,440px);padding:18px;background:var(--blue);color:var(--paper)}.skies-copy h3{color:var(--paper)}}
+    @media(max-width:430px){#personales .personal{grid-template-columns:1fr}.piece:first-child{grid-column:auto}}
+    .hero-copy .intro{margin-left:auto;text-align:right}
+    .project--avatar .work-gallery{display:flex;width:max-content;gap:4px;margin:0;animation:avatar-scroll 44s linear infinite}.project--avatar .work-gallery>*{display:block;flex:0 0 522px;width:522px;height:auto;min-height:0;aspect-ratio:16/9;margin:0;border:0;background:transparent}.project--avatar .work-gallery img{width:100%;height:100%;object-fit:cover}.project--avatar:hover .work-gallery{animation-play-state:paused}@keyframes avatar-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    #personales .piece img{width:60%;height:60%;margin:auto;object-fit:contain}
+    .animations .animation-card img,.animations .animation-card video{width:100%;height:100%;min-height:0;object-fit:cover}.animations .animation-card:nth-child(3) img,.animations .animation-card:nth-child(4) video{object-fit:contain;transform:none!important}
+    @media(max-width:760px){.hero-copy .intro{margin-left:auto;text-align:right}.project--avatar .work-gallery{display:flex;width:max-content;gap:4px;margin:0;animation:avatar-scroll 44s linear infinite}.project--avatar .work-gallery>*{flex-basis:calc(100vw - 28px);width:calc(100vw - 28px);min-height:0;height:auto;aspect-ratio:16/9}#personales .piece img{width:60%;height:60%}}
+    #personales .personal{display:flex;width:100%;flex-wrap:wrap;align-items:flex-end;gap:14px}.personal .piece,#personales .personal .piece:first-child{display:block;flex:1 1 28%;min-height:0;margin:0;overflow:visible;background:transparent}.personal .piece:first-child{flex-basis:40%}.personal .piece img,#personales .piece img{width:100%;height:auto;margin:0;object-fit:contain;transform:none}.personal figcaption{position:static;padding:8px 0 0;background:transparent;color:var(--paper)}
+    @media(max-width:760px){#personales .personal{display:grid;grid-template-columns:1fr;gap:24px}.personal .piece,#personales .personal .piece:first-child{width:100%;min-height:0}.personal .piece img,#personales .piece img{width:100%;height:auto}}
+    #personales .personal{display:grid;width:100%;grid-template-columns:.72fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));align-items:stretch;gap:14px}.personal .piece,#personales .personal .piece:first-child{width:auto;min-height:0;margin:0;background:transparent}.personal .piece:first-child{grid-column:1;grid-row:1 / span 2}.personal .piece img,#personales .piece img{width:100%;height:100%;margin:0;object-fit:contain}.personal figcaption{position:static;padding:8px 0 0;background:transparent;color:var(--paper)}
+    @media(max-width:760px){#personales .personal{display:grid;grid-template-columns:1fr;grid-template-rows:none;gap:24px}.personal .piece:first-child{grid-column:auto;grid-row:auto}.personal .piece img,#personales .piece img{width:100%;height:auto}}
+    @media(prefers-reduced-motion:reduce){.mark img,h2::before,h2::after{animation:none}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="nav"><div class="shell"><a class="nav-brand" href="#inicio">Melanie Juárez Ramírez</a><ul class="nav-links" id="menu"><li><a href="#conoceme">Conóceme</a></li><li><a href="#disciplinas">Habilidades</a></li><li><a href="#destacados">Destacados</a></li><li><a href="#personales">Personales</a></li><li><a href="#contacto">Contacto</a></li></ul><button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">MENÚ</button></div></header>
+<main id="contenido">
+ <section class="hero" id="inicio"><div class="shell"><div class="hero-copy"><p class="overline">Hola, soy</p><h1><span class="juho">JUHO</span><span class="portfolio-label">PORTAF<span class="portfolio-letter-o">O</span>LIO</span></h1><p class="intro">Diseñadora gráfica e ilustradora multidisciplinaria. Construyo piezas con propósito, carácter e historia.</p></div><figure class="portrait"><img src="Assets/mel-normal.png" alt="Ilustración de Melanie Juárez Ramírez"></figure></div></section>
+ <section class="section paper" id="conoceme"><div class="shell about"><div><p class="kicker">01 / CONÓCEME</p><h2>Sobre mí</h2><p>Soy Melanie Juárez Ramírez (JuHo). Estudio Diseño Gráfico Digital en la Universidad La Salle Condesa y trabajo entre la ilustración, el diseño gráfico, el motion y el 3D.</p><p>Me interesa entender el problema, observar el contexto y convertir conexiones en conceptos visuales. Para mí, el diseño es una herramienta para contar historias, provocar emociones y encontrar nuevas formas de mirar lo cotidiano.</p><div class="facts"><div class="fact"><b>REFERENCIAS</b><span>Música, cine animado, culturas asiáticas, fantasía y thrillers.</span></div><div class="fact"><b>EN FORMACIÓN</b><span>Universidad La Salle Condesa · 2023–2027</span></div></div></div><div class="about-art"><img src="Assets/ilustracion-principal.jpg" alt="Ilustración ornamental azul con motivos astrales"><span>Diseño con propósito e historia.</span></div></div><div class="shell likes"><div class="likes-head"><h3>Mis referencias personales</h3><p>Series · películas · música</p></div><div class="likes-grid"><figure class="like"><img src="Assets/serie-haikyuu.png" alt="Arte de Haikyuu"><span>Haikyuu!!</span></figure><figure class="like"><img src="Assets/serie-parasite.png" alt="Arte de Parasite"><span>Parasite</span></figure><figure class="like"><img src="Assets/serie-aijin.png" alt="Arte de Ajin"><span>Ajin</span></figure><figure class="like"><img src="Assets/serie-hotpg.png" alt="Arte de una serie"><span>Serie</span></figure><figure class="like"><img src="Assets/peli-perfume.png" alt="Arte de El perfume"><span>El perfume</span></figure><figure class="like"><img src="Assets/peli-zorro.png" alt="Arte de El zorro"><span>El zorro</span></figure><figure class="like"><img src="Assets/peli-truman.png" alt="Arte de Truman"><span>Truman</span></figure><figure class="like"><img src="Assets/albumev-1.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albummichael-1.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albummichael-2.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albummichael-3.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albumskz-1.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albumskz-2.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/album-skz3.png" alt="Portada musical"><span>Música</span></figure><figure class="like"><img src="Assets/albumxlov-1.png" alt="Portada musical"><span>Música</span></figure></div></div></section>
+ <section class="section" id="disciplinas"><div class="shell skills"><div><p class="kicker">02 / DISCIPLINAS</p><h2>Medios para imaginar.</h2></div><div><h3>Especialidades</h3><ul class="tags"><li>Ilustración</li><li>Storyboard</li><li>Concept art</li><li>Diseño digital</li><li>Motion graphics</li><li>Comunicación visual</li><li>Diseño de marca</li><li>Identidades visuales</li></ul><h3>Herramientas</h3><div class="tools"><div class="tool"><span>Adobe Illustrator</span><span>100%</span></div><div class="tool"><span>Adobe Photoshop</span><span>100%</span></div><div class="tool"><span>Procreate / IbisPaint</span><span>100%</span></div><div class="tool"><span>Notion</span><span>90%</span></div><div class="tool"><span>Figma / After Effects</span><span>85%</span></div><div class="tool"><span>Substance / Maya</span><span>85%</span></div><div class="tool"><span>InDesign / ZBrush</span><span>70%</span></div><div class="tool"><span>Clip Studio / Toon Boom</span><span>70%</span></div></div><h3 style="margin-top:38px">Idiomas</h3><div class="language"><b>Español</b><span>Nativo</span></div><div class="language"><b>Inglés</b><span>Avanzado</span></div><div class="language"><b>Chino</b><span>Básico</span></div></div></div></section>
+ <section class="section paper" id="destacados"><div class="shell"><p class="kicker">03 / PROYECTOS DESTACADOS</p><h2>Diseñar mundos posibles.</h2><div class="projects"><article class="project"><div><p class="project-type">Identidad gráfica · Exposición</p><h3>Hibridum</h3><p>Identidad gráfica para una exposición ficticia en el Museo del Palacio de Bellas Artes. Explora el diálogo entre lo digital y lo caligráfico, lo geométrico y lo orgánico.</p><span class="award">Premio Nacional Diseña México 2025 · Ganador</span><br><span class="award">Veredictas Cum Laude 2025 · Selección</span></div><div class="project-image"><img src="Assets/Hibridum_cartelprincipal.png" alt="Cartel del proyecto Hibridum"></div></article><article class="project"><div><p class="project-type">Campaña editorial</p><h3>Imaginario mexicano</h3><p>Campaña para una edición ficticia de la Feria Internacional del Libro de Guadalajara que reinterpreta el universo simbólico de México desde una mirada contemporánea.</p></div><div class="project-image"><img src="Assets/imaginariomexicano_gráfico1.png" alt="Gráfico del proyecto Imaginario mexicano"></div></article><article class="project"><div><p class="project-type">Diseño y modelado 3D</p><h3>Avatar — Contacto a Pandora</h3><p>Diseño de un stand inspirado en Avatar: una cápsula procedente de la Tierra aterriza en Pandora y se transforma en un espacio fotográfico donde se encuentran tecnología y naturaleza.</p></div><div class="project-image contain"><img src="Assets/Avatar_render_1_0004.png" alt="Render del proyecto Avatar Contacto a Pandora"></div></article></div></div></section>
+ <section class="section divine" id="intervencion-divina"><div class="shell"><p class="kicker">04 / MODELADO 3D</p><h2>Intervención divina.</h2><article class="project"><div><p class="project-type">Diseño y modelado 3D</p><p>Diseño y modelado de personaje y escena 3D con temática azul. La pieza explora la certeza personal, las consecuencias de las decisiones y la perseverancia al elegir un camino propio.</p></div><figure class="divine-art"><img src="Assets/Render_Melanielibroazulfinal.png" alt="Diseño y modelado 3D Intervención divina"></figure></article></div></section>
+ <section class="section" id="personales"><div class="shell"><p class="kicker">05 / PROYECTOS PERSONALES</p><h2>Explorar es parte del proceso.</h2><div class="personal"><figure class="piece"><img src="Assets/Ilustracion_estilizada.png" alt="Ilustración estilizada"><figcaption>Ilustración estilizada</figcaption></figure><figure class="piece"><img src="Assets/Diseñopersonaje_xppen.png" alt="Diseño de personaje para XpPen"><figcaption>Diseño de personajes · Bruja de supermercado</figcaption></figure><figure class="piece"><img src="Assets/ojos-2.png" alt="Ilustración experimental de ojos"><figcaption>Ilustración experimental</figcaption></figure></div><div class="writing"><div class="skies-copy"><h3>SKIES COLLIDE</h3><h4>Resumen</h4><p>Desde tiempos antiguos, la humanidad ha depositado su fe en el poder de la naturaleza por encima del poder divino. Un joven sin don natural emprende una travesía para desafiar a los dioses y demostrar que la supervivencia humana no depende de ellos. Sin embargo, su convicción será puesta a prueba cuando un dios caído se interese en él.</p></div><figure class="skies-poster"><img src="Assets/skiescollide-poster.png" alt="Póster de SKIES COLLIDE"></figure></div></div></section>
+ <section class="section animations" id="animaciones"><div class="shell"><p class="kicker">06 / MIS ANIMACIONES</p><h2>Mis animaciones</h2><div class="animation-grid"><figure class="animation-card"><video src="Assets/lightsitck_Vid_MJR.mp4" controls autoplay muted loop playsinline>Tu navegador no admite video.</video></figure><figure class="animation-card"><img src="Assets/dunkin.gif" alt="Animación Dunkin"></figure><figure class="animation-card"><img src="Assets/HIBRIDUM.gif" alt="Animación de Hibridum"></figure><figure class="animation-card"><video src="Assets/luca_MJR.mp4" controls autoplay muted loop playsinline>Tu navegador no admite video.</video></figure></div></div></section>
+ <section class="section paper" id="contacto"><div class="shell contact"><div><p class="kicker">07 / HABLEMOS</p><h2>¿Creamos algo juntos?</h2><p>Estoy disponible para proyectos de diseño, ilustración, identidad visual y exploración creativa.</p><div class="links"><a href="mailto:juho.contact@gmail.com">juho.contact@gmail.com ↗</a><a href="tel:+528140080069">+52 81 4008 0069 ↗</a><a href="https://www.behance.net/melaniejuarez8" target="_blank" rel="noreferrer">Behance / melaniejuarez8 ↗</a><a href="https://www.instagram.com/juh0_juu/" target="_blank" rel="noreferrer">Instagram / @juh0_juu ↗</a></div></div><div class="mark"><img src="Assets/ilustracion-principal.jpg" alt="Motivo ornamental de JuHo"></div></div></section>
+</main><footer><div class="shell"><span>JuHo · Melanie Juárez Ramírez</span><strong class="footer-quote">“But what will you become tomorrow?” <em>— Haruichi Furudate</em></strong></div></footer>
+<script>
+  const menuButton = document.querySelector('.menu-button');
+  const menu = document.querySelector('#menu');
+  menuButton.textContent = '☰';
+  menuButton.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.textContent = open ? '×' : '☰';
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.textContent = '☰';
+  }));
+
+  const sectionTitles = {conoceme:'Sobre mí', disciplinas:'Habilidades', destacados:'Proyectos destacados', personales:'Proyectos personales', contacto:'Contacto'};
+  Object.entries(sectionTitles).forEach(([id, title]) => document.querySelector(`#${id} h2`).textContent = title);
+  document.querySelector('#disciplinas .kicker').textContent = '02 / HABILIDADES';
+  const tools = [
+    ['illustrator-logo.png','Adobe Illustrator','100%'], ['photoshop-logo.png','Adobe Photoshop','100%'],
+    ['procreate-logo.png','Procreate','100%'], ['ibispint-logo.png','IbisPaint','100%'], ['notion-logo.png','Notion','90%'],
+    ['figma-logo.png','Figma','85%'], ['aftereffects-logo.png','After Effects','85%'], ['substance-logo.png','Substance','85%'],
+    ['maya-logo.png','Maya','85%'], ['indesign-logo.png','InDesign','70%'], ['zbrush-logo.png','ZBrush','70%']
+  ];
+  document.querySelector('.tools').innerHTML = tools.map(([logo,name,level]) => `<div class="tool"><span class="tool-name"><img src="Assets/${logo}" alt="">${name}</span><span>${level}</span></div>`).join('');
+
+  const referenceStrip = document.querySelector('.likes-grid');
+  referenceStrip.querySelectorAll('.like').forEach(item => {
+    const duplicate = item.cloneNode(true);
+    duplicate.setAttribute('aria-hidden', 'true');
+    referenceStrip.appendChild(duplicate);
+  });
+
+  menu.insertAdjacentHTML('beforeend', '<li><a href="#animaciones">Animaciones</a></li>');
+  document.querySelector('.award').textContent = 'Ganador de subcategoría en Diseño de Identidad Gráfica Estudiantes, Premio Nacional de Diseño Diseña México 2025';
+  const contactArt = document.querySelector('.mark img');
+  contactArt.src = 'Assets/ilustración-mel.png';
+  contactArt.alt = 'Ilustración de Melanie Juárez Ramírez';
+  const aboutArt = document.querySelector('.about-art img');
+  aboutArt.src = 'Assets/elemento01.png';
+  aboutArt.alt = 'Gráfico ornamental de la identidad de JuHo';
+  document.querySelector('.about-art span').remove();
+
+  const buildGallery = (assets, label) => {
+    const gallery = document.createElement('div');
+    gallery.className = 'work-gallery';
+    gallery.setAttribute('aria-label', label);
+    gallery.innerHTML = assets.map(asset => `<figure><img src="Assets/${asset}" alt="Trabajo de portafolio"></figure>`).join('');
+    return gallery;
+  };
+  const projects = document.querySelectorAll('#destacados .project');
+  projects[0].append(buildGallery(['HIBRIDUM.jpg','HIBRIDUUM.jpg'], 'Imágenes del proyecto Hibridum'));
+  projects[0].classList.add('project--hibridum');
+  const hibridumGallery = projects[0].querySelector('.work-gallery');
+  hibridumGallery.prepend(projects[0].querySelector('.project-image'));
+  projects[1].append(buildGallery(['Blog_FIL_ImaginarioMexicano_MRJ.jpg','Rectangle 12.jpg'], 'Imágenes del proyecto Imaginario Mexicano'));
+  projects[1].classList.add('project--imaginario');
+  const imaginarioGallery = projects[1].querySelector('.work-gallery');
+  imaginarioGallery.prepend(projects[1].querySelector('.project-image'));
+  projects[2].append(buildGallery(['Avatar_1_0001.png','Avatar_1_0006.png','Avatar_1_0020.png','Avatar_render_1_0003.png'], 'Imágenes del proyecto Avatar'));
+  projects[2].classList.add('project--avatar');
+  const avatarGallery = projects[2].querySelector('.work-gallery');
+  avatarGallery.prepend(projects[2].querySelector('.project-image'));
+  Array.from(avatarGallery.children).forEach(item => {
+    const duplicate = item.cloneNode(true);
+    duplicate.setAttribute('aria-hidden', 'true');
+    avatarGallery.appendChild(duplicate);
+  });
+</script>
+</body></html>

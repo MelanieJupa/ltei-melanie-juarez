@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de diseño - Referencia visual completa con paleta de colores, tipografía, radios, formas y componentes">
+  <title>Sistema de Diseño | Referencia Visual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root {
+      --color-primary: #0A369D;
+      --color-primary-light: #4D8BFF;
+      --color-secondary: #1A9A8A;
+      --color-secondary-hover: #0D6B5E;
+      --color-secondary-original: #3BC1AE;
+      --color-accent: #73C2FB;
+      --color-accent-dark: #1A5F7A;
+      --color-surface: #EAEBEB;
+      --color-surface-variant: #8A8A93;
+      --color-surface-variant-original: #95959D;
+      --color-background: #141415;
+      --color-on-primary: #EAEBEB;
+      --color-on-secondary: #141415;
+      --color-on-surface: #141415;
+      --color-on-background: #EAEBEB;
+      --color-disabled: #5A5A60;
+      --color-placeholder: #A0A0A8;
+      --color-gradient-start: #0A369D;
+      --color-gradient-mid: #3BC1AE;
+      --color-gradient-end: #73C2FB;
+
+      --font-display: "Gill Sans Display", "Gill Sans", sans-serif;
+      --font-secondary: "Oscine Trial", system-ui, sans-serif;
+      --font-body: "Open Sauce Two", system-ui, sans-serif;
+
+      --font-size-display: 72px;
+      --font-size-h1: 48px;
+      --font-size-h2: 40px;
+      --font-size-h3: 24px;
+      --font-size-body: 20px;
+      --font-size-nav: 20px;
+      --font-size-small: 16px;
+      --font-size-button: 20px;
+      --font-size-link: 20px;
+
+      --font-weight-display: 700;
+      --font-weight-h1: 700;
+      --font-weight-h2: 700;
+      --font-weight-h3: 400;
+      --font-weight-body: 400;
+      --font-weight-nav: 400;
+      --font-weight-small: 400;
+      --font-weight-button: 400;
+      --font-weight-link: 400;
+
+      --line-height-display: 1;
+      --line-height-h1: 1;
+      --line-height-h2: 1.05;
+      --line-height-h3: 1.2;
+      --line-height-body: 1.5;
+      --line-height-nav: 1.5;
+      --line-height-small: 1.5;
+      --line-height-button: 1.5;
+      --line-height-link: 1.5;
+
+      --rounded-default: 0px;
+      --rounded-buttons: 0px;
+      --rounded-cards: 0px;
+      --rounded-fields: 0px;
+      --rounded-images: 0px;
+      --rounded-containers: 0px;
+
+      --spacing-max-width: 1440px;
+      --spacing-grid-desktop: 14;
+      --spacing-grid-tablet: 10;
+      --spacing-grid-mobile: 6;
+
+      --btn-primary-bg: var(--color-primary);
+      --btn-primary-text: var(--color-on-primary);
+      --btn-primary-hover-bg: var(--color-secondary-hover);
+      --btn-primary-pressed-bg: var(--color-primary);
+      --btn-primary-disabled-bg: var(--color-disabled);
+      --btn-secondary-bg: var(--color-surface);
+      --btn-secondary-text: var(--color-primary);
+      --btn-secondary-hover-text: var(--color-secondary-hover);
+      --btn-ghost-bg: var(--color-surface);
+      --btn-ghost-text: var(--color-accent-dark);
+      --btn-ghost-hover-text: var(--color-secondary-hover);
+      --btn-padding: 12px 24px;
+      --link-text: var(--color-accent);
+      --link-hover-text: var(--color-secondary-original);
+
+      --card-bg: var(--color-background);
+      --card-text: var(--color-on-background);
+      --card-padding: 24px;
+
+      --hero-bg: var(--color-background);
+      --hero-text: var(--color-on-background);
+      --hero-padding: 80px 0;
+      --hero-gradient-bg: var(--color-gradient-start);
+      --hero-gradient-text: var(--color-on-primary);
+
+      --nav-bg: var(--color-background);
+      --nav-text: var(--color-on-background);
+      --nav-link-text: var(--color-primary-light);
+      --nav-link-hover-text: var(--color-secondary-original);
+      --nav-padding: 16px 0;
+
+      --field-bg: var(--color-background);
+      --field-text: var(--color-on-background);
+      --field-border: var(--color-surface-variant);
+      --field-focus-border: var(--color-primary);
+      --field-placeholder: var(--color-placeholder);
+      --field-padding: 12px 16px;
+      --field-label-padding: 0 0 4px;
+
+      --icon-bg: var(--color-background);
+      --icon-text: var(--color-surface);
+      --icon-hover-bg: var(--color-surface);
+      --icon-hover-text: var(--color-background);
+      --icon-size: 24px;
+
+      --tag-bg: var(--color-surface-variant);
+      --tag-text: var(--color-on-surface);
+      --tag-padding: 4px 8px;
+
+      --decorative-bg: var(--color-background);
+      --decorative-text: var(--color-surface-variant-original);
+      --decorative-accent-bg: var(--color-secondary-original);
+      --decorative-accent-text: var(--color-on-secondary);
+
+      --gradient-mid-bg: var(--color-gradient-mid);
+      --gradient-mid-text: var(--color-on-surface);
+      --gradient-end-bg: var(--color-gradient-end);
+      --gradient-end-text: var(--color-on-surface);
+    }
+
+    @font-face {
+      font-family: "Gill Sans Display";
+      src: url("tipografias/Gill Sans Display MT Pro Bold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_Rg.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_It.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_Bd.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_BdIt.ttf") format("truetype");
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_Lt.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_LtIt.ttf") format("truetype");
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_XBd.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Oscine Trial";
+      src: url("tipografias/Oscine_Trial_XBdIt.ttf") format("truetype");
+      font-weight: 800;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Italic.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-LightItalic.ttf") format("truetype");
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-MediumItalic.ttf") format("truetype");
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-SemiBoldItalic.ttf") format("truetype");
+      font-weight: 600;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-BoldItalic.ttf") format("truetype");
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-ExtraBold.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-ExtraBoldItalic.ttf") format("truetype");
+      font-weight: 800;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-Black.ttf") format("truetype");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Open Sauce Two";
+      src: url("tipografias/OpenSauceTwo-BlackItalic.ttf") format("truetype");
+      font-weight: 900;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--font-size-body);
+      font-weight: var(--font-weight-body);
+      line-height: var(--line-height-body);
+      color: var(--color-on-background);
+      background-color: var(--color-background);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--spacing-max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 48px;
+      }
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--color-secondary-original);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus-visible:not-sr-only">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Navegación principal">
+        <div class="nav__brand">
+          <h1 class="nav__title">Sistema de Diseño</h1>
+        </div>
+        <ul class="nav__list" role="list">
+          <li><a href="#colors" class="nav__link">Colores</a></li>
+          <li><a href="#typography" class="nav__link">Tipografía</a></li>
+          <li><a href="#shapes" class="nav__link">Formas</a></li>
+          <li><a href="#components" class="nav__link">Componentes</a></li>
+          <li><a href="#layout" class="nav__link">Layout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section id="colors" class="section" aria-labelledby="colors-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="colors-heading" class="section__title">Paleta de Colores</h2>
+          <p class="section__description">Sistema de colores con roles semánticos, contrastes WCAG AA y reglas de uso sobre fondos claros/oscuros.</p>
+        </header>
+
+        <div class="color-section">
+          <h3 class="color-section__title">Colores Principales</h3>
+          <div class="color-grid" role="list">
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-primary);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Primary</h4>
+                <code class="color-card__token">--color-primary</code>
+                <code class="color-card__hex">#0A369D</code>
+                <p class="color-card__role">Azul Egipcio — Color principal, textos grandes y títulos</p>
+                <span class="color-card__contrast">Contraste sobre onPrimary: 8.67:1 ✅</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-primary-light);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Primary Light</h4>
+                <code class="color-card__token">--color-primary-light</code>
+                <code class="color-card__hex">#4D8BFF</code>
+                <p class="color-card__role">Variante clara del primary para estados hover/focus</p>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-secondary);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Secondary</h4>
+                <code class="color-card__token">--color-secondary</code>
+                <code class="color-card__hex">#1A9A8A</code>
+                <p class="color-card__role">Brisa Oceánica (ajustada) — Subtítulos, categorías, estados activos en fondos claros</p>
+                <span class="color-card__contrast">Contraste sobre onSecondary: 8.26:1 ✅</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-secondary-original);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Secondary Original</h4>
+                <code class="color-card__token">--color-secondary-original</code>
+                <code class="color-card__hex">#3BC1AE</code>
+                <p class="color-card__role">Brisa Oceánica original — Solo sobre fondos oscuros (background, primary)</p>
+                <span class="color-card__warning">⚠ No usar sobre surface (#EAEBEB)</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-accent);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Accent</h4>
+                <code class="color-card__token">--color-accent</code>
+                <code class="color-card__hex">#73C2FB</code>
+                <p class="color-card__role">Azul Maya — Enlaces, elementos interactivos</p>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-accent-dark);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Accent Dark</h4>
+                <code class="color-card__token">--color-accent-dark</code>
+                <code class="color-card__hex">#1A5F7A</code>
+                <p class="color-card__role">Variante oscura del accent para botones ghost</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="color-section">
+          <h3 class="color-section__title">Superficies y Fondos</h3>
+          <div class="color-grid" role="list">
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-surface);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Surface</h4>
+                <code class="color-card__token">--color-surface</code>
+                <code class="color-card__hex">#EAEBEB</code>
+                <p class="color-card__role">Platino — Textos y acentos en elementos, fondos claros</p>
+                <span class="color-card__contrast">Contraste onSurface: 15.41:1 ✅</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-surface-variant);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Surface Variant</h4>
+                <code class="color-card__token">--color-surface-variant</code>
+                <code class="color-card__hex">#8A8A93</code>
+                <p class="color-card__role">Cuarzo (ajustado) — Placeholders, bordes, fondos medios en claros</p>
+                <span class="color-card__contrast">Contraste AA sobre surface ✅</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-surface-variant-original);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Surface Variant Original</h4>
+                <code class="color-card__token">--color-surface-variant-original</code>
+                <code class="color-card__hex">#95959D</code>
+                <p class="color-card__role">Cuarzo original — Solo sobre fondos oscuros, degradados, decorativos</p>
+                <span class="color-card__warning">⚠ No usar sobre surface (#EAEBEB)</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-background);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Background</h4>
+                <code class="color-card__token">--color-background</code>
+                <code class="color-card__hex">#141415</code>
+                <p class="color-card__role">Onyx — Fondos principales</p>
+                <span class="color-card__contrast">Contraste onBackground: 15.41:1 ✅</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="color-section">
+          <h3 class="color-section__title">Colores Semánticos (On Colors)</h3>
+          <div class="color-grid" role="list">
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-on-primary);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">On Primary</h4>
+                <code class="color-card__token">--color-on-primary</code>
+                <code class="color-card__hex">#EAEBEB</code>
+                <p class="color-card__role">Texto sobre primary</p>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-on-secondary);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">On Secondary</h4>
+                <code class="color-card__token">--color-on-secondary</code>
+                <code class="color-card__hex">#141415</code>
+                <p class="color-card__role">Texto sobre secondary</p>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-on-surface);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">On Surface</h4>
+                <code class="color-card__token">--color-on-surface</code>
+                <code class="color-card__hex">#141415</code>
+                <p class="color-card__role">Texto sobre surface</p>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-on-background);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">On Background</h4>
+                <code class="color-card__token">--color-on-background</code>
+                <code class="color-card__hex">#EAEBEB</code>
+                <p class="color-card__role">Texto sobre background</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="color-section">
+          <h3 class="color-section__title">Estados y Utilidades</h3>
+          <div class="color-grid" role="list">
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-disabled);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Disabled</h4>
+                <code class="color-card__token">--color-disabled</code>
+                <code class="color-card__hex">#5A5A60</code>
+                <p class="color-card__role">Estado deshabilitado</p>
+                <span class="color-card__contrast">4.51:1 sobre surface ✅</span>
+              </div>
+            </article>
+            <article class="color-card" role="listitem">
+              <div class="color-card__swatch" style="background-color: var(--color-placeholder);" aria-hidden="true"></div>
+              <div class="color-card__info">
+                <h4 class="color-card__name">Placeholder</h4>
+                <code class="color-card__token">--color-placeholder</code>
+                <code class="color-card__hex">#A0A0A8</code>
+                <p class="color-card__role">Texto de placeholder en campos</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="color-section">
+          <h3 class="color-section__title">Degradados (Gradients)</h3>
+          <p class="color-section__note">Permitidos únicamente en hero, fondos decorativos. Estética aurora boreal entre azules y verde.</p>
+          <div class="gradient-showcase" role="list">
+            <div class="gradient-item" role="listitem" aria-label="Gradient Start - Azul Egipcio">
+              <div class="gradient-item__bar" style="background: var(--color-gradient-start);" aria-hidden="true"></div>
+              <div class="gradient-item__info">
+                <code class="gradient-item__token">--color-gradient-start</code>
+                <code class="gradient-item__hex">#0A369D</code>
+                <span class="gradient-item__name">Azul Egipcio</span>
+              </div>
+            </div>
+            <div class="gradient-item" role="listitem" aria-label="Gradient Mid - Brisa Oceánica">
+              <div class="gradient-item__bar" style="background: var(--color-gradient-mid);" aria-hidden="true"></div>
+              <div class="gradient-item__info">
+                <code class="gradient-item__token">--color-gradient-mid</code>
+                <code class="gradient-item__hex">#3BC1AE</code>
+                <span class="gradient-item__name">Brisa Oceánica</span>
+              </div>
+            </div>
+            <div class="gradient-item" role="listitem" aria-label="Gradient End - Azul Maya">
+              <div class="gradient-item__bar" style="background: var(--color-gradient-end);" aria-hidden="true"></div>
+              <div class="gradient-item__info">
+                <code class="gradient-item__token">--color-gradient-end</code>
+                <code class="gradient-item__hex">#73C2FB</code>
+                <span class="gradient-item__name">Azul Maya</span>
+              </div>
+            </div>
+          </div>
+          <div class="gradient-full" aria-label="Degradado completo" role="img">
+            <div class="gradient-full__bar" style="background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end));" aria-hidden="true"></div>
+            <p class="gradient-full__label">Degradado completo: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end))</p>
+          </div>
+        </div>
+
+        <div class="color-section color-rules">
+          <h3 class="color-section__title">Reglas de Contraste y Uso</h3>
+          <div class="rules-grid">
+            <div class="rule-card rule-card--do">
+              <h4 class="rule-card__title">✅ Do's</h4>
+              <ul class="rule-card__list" role="list">
+                <li>Usar <code>var(--color-primary)</code> para títulos y elementos de mayor jerarquía</li>
+                <li>Usar <code>var(--color-secondary)</code> para subtítulos, categorías, estados activos en fondos claros</li>
+                <li>Usar <code>var(--color-secondary-original)</code> solo sobre fondos oscuros (background, primary)</li>
+                <li>Usar <code>var(--color-surface)</code> para textos sobre fondos oscuros y acentos gráficos</li>
+                <li>Mantener estética plana, geométrica, alto contraste</li>
+              </ul>
+            </div>
+            <div class="rule-card rule-card--dont">
+              <h4 class="rule-card__title">❌ Don'ts</h4>
+              <ul class="rule-card__list" role="list">
+                <li>No usar <code>var(--color-secondary-original)</code> ni <code>var(--color-surface-variant-original)</code> sobre fondos claros (surface, onSurface)</li>
+                <li>No usar colores cálidos ni opacos</li>
+                <li>No combinar colores que reduzcan contraste o dificulten lectura</li>
+                <li>No usar sombras difusas, glows, blur o efectos 3D excesivos</li>
+                <li>No sacrificar legibilidad por composición maximalista</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

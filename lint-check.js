@@ -1,34 +1,23 @@
-const { lint } = require('@google/design.md/linter');
 const fs = require('fs');
+const path = require('path');
 
-const content = fs.readFileSync('DESIGN.md', 'utf8');
-const report = lint(content);
+const targets = ['index.html', 'melanie_design_system.html'];
+let missingReferences = 0;
 
-console.log('=== SUMMARY ===');
-console.log(JSON.stringify(report.summary, null, 2));
+for (const target of targets) {
+  const content = fs.readFileSync(target, 'utf8');
+  const references = [...content.matchAll(/(?:src|href)=["']([^"']+)["']/g)]
+    .map((match) => match[1])
+    .filter((reference) => !/^(#|https?:|mailto:|tel:|data:)/.test(reference))
+    .filter((reference) => !reference.includes('${'));
 
-console.log('\n=== FINDINGS ===');
-report.findings.forEach(f => {
-  console.log(`[${f.severity.toUpperCase()}] ${f.path}: ${f.message}`);
-});
+  const missing = references.filter((reference) => !fs.existsSync(path.resolve(reference)));
+  missingReferences += missing.length;
+  console.log(`${target}: ${references.length - missing.length}/${references.length} referencias locales disponibles`);
 
-console.log('\n=== UNUSED TOKENS ===');
-if (report.designSystem) {
-  // Check for unused color tokens
-  const colors = Object.keys(report.designSystem.colors || {});
-  const usedColors = new Set();
-  
-  // Simple check: find all token references in the file
-  const tokenRefs = content.match(/\{colors\.([^}]+)\}/g) || [];
-  tokenRefs.forEach(ref => {
-    const match = ref.match(/\{colors\.([^}]+)\}/);
-    if (match) usedColors.add(match[1]);
-  });
-  
-  const unused = colors.filter(c => !usedColors.has(c));
-  if (unused.length > 0) {
-    console.log('Colores definidos pero no referenciados:', unused.join(', '));
-  } else {
-    console.log('Todos los colores están referenciados en el archivo.');
+  for (const reference of missing) {
+    console.error(`  Falta: ${reference}`);
   }
 }
+
+process.exitCode = missingReferences ? 1 : 0;
