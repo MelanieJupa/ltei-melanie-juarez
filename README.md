@@ -36,22 +36,24 @@ GitHub: [@MelanieJupa](https://github.com/MelanieJupa)
 | Documento | Enlace |
 |-----------|--------|
 | **DesignMJR.pdf** | [Ver en GitHub](https://github.com/MelanieJupa/ltei-melanie-juarez/blob/master/DesignMJR.pdf) |
+| **Arquitectura-CV_MJR.pdf** | [Ver en GitHub](https://github.com/MelanieJupa/ltei-melanie-juarez/blob/master/Arquitectura-CV_MJR.pdf) |
 
 ---
 
 ## 📁 Estructura del proyecto
 
 ```
-├── index.html                 # Página principal
-├── design.html                # Página de diseño
-├── archivo.html               # Archivo adicional
-├── melanie_design_system.html # Sistema de diseño
-├── CV.md                      # Currículum en Markdown
-├── DESIGN.md                  # Documentación de diseño
-├── DesignMJR.pdf              # Documento de diseño en PDF
-├── Assets/                    # Recursos (imágenes, estilos, scripts)
-├── tipografias/               # Fuentes utilizadas
-├── package.json               # Dependencias del proyecto
+├── index.html                      # Página principal
+├── design.html                     # Página de diseño
+├── archivo.html                    # Archivo adicional
+├── melanie_design_system.html      # Sistema de diseño
+├── CV.md                           # Currículum en Markdown
+├── DESIGN.md                       # Documentación de diseño
+├── DesignMJR.pdf                   # Documento de diseño en PDF
+├── Arquitectura-CV_MJR.pdf         # Currículum arquitectura en PDF
+├── Assets/                         # Recursos (imágenes, estilos, scripts)
+├── tipografias/                    # Fuentes utilizadas
+├── package.json                    # Dependencias del proyecto
 └── package-lock.json
 ```
 
