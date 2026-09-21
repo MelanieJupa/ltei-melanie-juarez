@@ -1,4 +1,7 @@
 ---
+version: "alpha"
+name: "Melanie Juárez Design System"
+description: "Sistema visual maximalista, geométrico y de alto contraste para el portafolio de Melanie Juárez."
 colors:
   primary: "#0A369D"
   primaryLight: "#4D8BFF"
@@ -69,6 +72,13 @@ typography:
     lineHeight: "1.5"
 
 spacing:
+  xs: "4px"
+  sm: "8px"
+  md: "16px"
+  lg: "24px"
+  xl: "40px"
+  section: "80px"
+  touchTarget: "44px" # REVISAR: mínimo de interacción inferido de la guía responsive.
   maxWidth: "1440px"
   gridDesktop: 14
   gridTablet: 10
@@ -289,11 +299,11 @@ components:
     size: "auto"
 ---
 
-# Overview
+## Overview
 
 Mi identidad visual está inclinada a diseño con carácter, con composiciones experimentales, gran uso de ilustración, contrastes y recursos visuales fuertes. Con una estética contemporánea donde una paleta de color en escalas de grises y negros con acentos azules y verdes conviven en un mismo formato. Mi estilo es maximalista, con elementos mezclados entre lo ornamental y lo tribal, con muchas referencias a estrellas, siguiendo las estéticas edgy, gótico y Y2K.
 
-# Colors
+## Colors
 
 Mi paleta de color consta de azules y verdes conviviendo en grises y tonos oscuros:
 
@@ -331,9 +341,9 @@ Mi paleta de color consta de azules y verdes conviviendo en grises y tonos oscur
 - No utilizar colores cálidos ni opacos
 - No combinar colores que reduzcan contraste o dificulten lectura
 
-# Typography
+## Typography
 
-## Familias
+### Familias
 - **Display** (`{typography.display.fontFamily}`): Gill Sans Display — títulos, encabezados, mensajes destacados. Aporta personalidad, fuerza y reconocimiento visual.
   - Archivo: `tipografias/Gill Sans Display MT Pro Bold.otf` (solo peso Bold 700)
   - ⚠️ **REVISAR**: Diseño especifica Regular (400); solo Bold disponible. Considerar fuente alternativa para pesos Regular si es crítico.
@@ -345,7 +355,7 @@ Mi paleta de color consta de azules y verdes conviviendo en grises y tonos oscur
   - Variante seleccionada: **Two** (conjunto más completo). Variantes One y Sans también disponibles en carpeta.
   - Uso principal: Regular 400 (`OpenSauceTwo-Regular.ttf`) para cuerpo de texto
 
-## Escala tipográfica
+### Escala tipográfica
 
 | Nivel | Token | Familia | Peso | Tamaño | Interlineado | Estilo |
 |-------|-------|---------|------|--------|--------------|--------|
@@ -361,10 +371,10 @@ Mi paleta de color consta de azules y verdes conviviendo en grises y tonos oscur
 
 > **Nota**: El estilo *italic* para Oscine Trial no es una propiedad del token tipográfico en el YAML (la spec solo permite fontFamily, fontSize, fontWeight, lineHeight, letterSpacing, fontFeature, fontVariation). Aplicar `font-style: italic` vía CSS en los componentes que lo requieran (botones, subtítulos, navegación, etiquetas, enlaces).
 
-## Jerarquía
+### Jerarquía
 Se construye mediante: **tamaño → peso → contraste entre familias → color**. No se usa opacidad como recurso principal.
 
-## Reglas
+### Reglas
 - Cuerpo de texto nunca < 16px
 - Gill Sans Display de forma estratégica
 - Oscine Trial como elemento de contraste (en italic)
@@ -372,23 +382,23 @@ Se construye mediante: **tamaño → peso → contraste entre familias → color
 - No usar tipografías serif en jerarquía principal
 - Gill Sans Display: solo Bold (700) disponible; evaluar si se necesita Regular (400) para títulos principales
 
-# Layout
+## Layout
 
-## Espaciado
+### Espaciado
 Sistema dinámico, experimental y maximalista. Combina espacios contenidos con zonas de amplitud para generar contraste. No sigue distribución completamente uniforme; puede usarse expresivamente para tensión, movimiento y jerarquía. Elementos del mismo grupo mantienen separación consistente.
 
-## Retículas
+### Retículas
 - **Escritorio**: 14 columnas (`{spacing.gridDesktop}`)
 - **Tableta**: 10 columnas (`{spacing.gridTablet}`)
 - **Móvil**: 6 columnas (`{spacing.gridMobile}`)
 - **Ancho máximo**: 1440px (centrado en escritorio amplio) (`{spacing.maxWidth}`)
 
-## Márgenes y separaciones
+### Márgenes y separaciones
 Se adaptan proporcionalmente por dispositivo manteniendo composición visual sin sacrificar legibilidad.
 
-## Comportamiento responsivo
+### Comportamiento responsivo
 
-### Móvil (320–599px)
+#### Móvil (320–599px)
 - Retícula 6 columnas, márgenes reducidos, estructura vertical
 - Tarjetas/proyectos → 1 columna
 - Decorativos reducidos/desplazados/eliminados
@@ -396,25 +406,25 @@ Se adaptan proporcionalmente por dispositivo manteniendo composición visual sin
 - Nav → hamburguesa en Cuarzo
 - Touch target mín. 44×44px
 
-### Tableta (600–1023px)
+#### Tableta (600–1023px)
 - Retícula 10 columnas
 - Tarjetas 2–3 columnas
 - Decorativos recuperan presencia, se extienden parcialmente
 
-### Escritorio (1024–1439px)
+#### Escritorio (1024–1439px)
 - Retícula 14 columnas
 - Estructuras asimétricas, combinaciones de tamaños
 - Espacios verticales amplios para contraste zonas densas/descanso
 - Organización no uniforme con jerarquía clara
 
-### Escritorio amplio (1440px+)
+#### Escritorio amplio (1440px+)
 - Contenido máx. 1440px centrado
 - Gráficos aprovechan espacio extra sin aumentar ancho contenido
 - Más espacio negativo, decorativos mayor escala, asimetría
 
 **En todos los tamaños**: Touch target mín. 44×44px, campos con altura suficiente. Ilustraciones/estrellas cambian posición/escala/cantidad según espacio.
 
-# Elevation & Depth
+## Elevation & Depth
 
 El diseño es **predominantemente plano y gráfico**. La profundidad NO se genera mediante blur, sombras difusas o tratamientos 3D, sino mediante:
 1. Contraste de color
@@ -423,18 +433,18 @@ El diseño es **predominantemente plano y gráfico**. La profundidad NO se gener
 4. Posición
 5. Jerarquía de elementos
 
-## Sombras
+### Sombras
 **Permitidas únicamente en**: imágenes, botones, tarjetas, elementos que requieran diferenciarse del fondo.
 **Estilo**: Definidas y nítidas (evitar apariencia suave/difuminada).
 **Prohibidas en**: textos, brillos, efectos 3D, tratamientos de profundidad, sombras difusas, blur, sombras excesivamente suaves.
 
-## Jerarquía tipográfica
+### Jerarquía tipográfica
 Tamaño, peso, tipografía, color, posición.
 
-## Profundidad decorativa
+### Profundidad decorativa
 Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales manteniendo estética plana, gráfica y contemporánea.
 
-# Shapes
+## Shapes
 
 **Estilo predominante**: Geométrico, gráfico, bordes rectos.
 - Esquinas **rectas (0px)** en botones, tarjetas, campos, imágenes, componentes (`{rounded.default}`, `{rounded.buttons}`, `{rounded.cards}`, `{rounded.fields}`, `{rounded.images}`, `{rounded.containers}`).
@@ -442,9 +452,9 @@ Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales ma
 - Formas con carácter definido y contrastante.
 - **Prohibido**: recursos excesivamente suaves, orgánicos, minimalistas que entren en conflicto con la personalidad visual.
 
-# Components
+## Components
 
-## Botones
+### Botones
 **Estética común**: Geométrica, directa, alto contraste, esquinas 0px (`{rounded.buttons}`).
 
 | Tipo | Fondo | Texto | Fuente | Padding | Hover |
@@ -457,20 +467,20 @@ Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales ma
 
 **Estados**: Pressed → ligero desplazamiento visual (manejar en CSS con `transform: translateY(1px)`). **Decorativos**: Pueden incorporar estrellas/símbolos sin interferir legibilidad. **Sin**: sombras/efectos profundidad en deshabilitado, botones circulares/píldora/redondeados.
 
-## Tarjetas y contenedores
+### Tarjetas y contenedores
 - Fondos: `{colors.background}`, `{colors.surfaceVariant}`, `{colors.surface}` según contraste requerido
 - Esquinas: 0px (`{rounded.cards}`), sin bordes redondeados
 - Tipografía: Títulos → Gill Sans Display (Bold 700) `{typography.h3}`; Subtítulos/categorías → Oscine Trial (400 italic) `{typography.h3}`; Descripciones → Open Sauce Two (400) `{typography.body}`
 - Hover: Scale 1.05 + ease-in (manejar en CSS)
 - **Tarjetas de proyecto**: Estructura asimétrica/experimental, imágenes sobresalen de retícula, decorativos techno-graffiti/gótico/Y2K, interacción por escala
 
-## Hero
+### Hero
 - Ancho completo
 - Fondos: Onyx, Cuarzo, degradados azules/verdes (`{colors.gradientStart}`, `{colors.gradientMid}`, `{colors.gradientEnd}`)
 - Gráficos pueden extenderse fuera de retícula
 - Tipografía: `{typography.display}`
 
-## Navegación
+### Navegación
 - Fondo: `{colors.background}` (Onyx)
 - Fuente principal: Oscine Trial (400) `{typography.nav}`; Títulos: Gill Sans Display (Bold 700) `{typography.h1}`
 - Color principal enlaces: `{colors.primary}`; Activo/énfasis: `{colors.secondaryOriginal}`
@@ -478,7 +488,7 @@ Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales ma
 - **Sin**: profundidad, glow, blur en enlaces
 - Puede incorporar elementos ornamentales/estrellas
 
-## Campos de texto
+### Campos de texto
 - Fondos: Onyx, Cuarzo, Platino según contraste
 - Esquinas: 0px (`{rounded.fields}`), borde 1px definido (manejar en CSS con `border: 1px solid {colors.surfaceVariant}`)
 - Borde normal: `{colors.surfaceVariant}` (Cuarzo oscuro) o `{colors.surface}` (Platino)
@@ -487,28 +497,28 @@ Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales ma
 - Placeholder: `{colors.surfaceVariant}` (Cuarzo oscuro)
 - **Sin**: Glows, blur, efectos de profundidad
 
-## Iconos
+### Iconos
 - Lenguaje simple y definido (contraste con composiciones complejas)
 - Color: `{colors.surface}` sobre `{colors.background}` (`{components.icon}`)
 - Hover: Inversión de contrastes (`{components.iconHover}`)
 - **Botones redes sociales**: Formas geométricas rectas, **evitar circulares/redondeados**
 
-## Recursos decorativos
+### Recursos decorativos
 - No interferir legibilidad ni áreas interactivas
 - Estrellas, símbolos, recursos techno-graffiti/gótico/Y2K
 - Usar `{colors.surfaceVariantOriginal}` y `{colors.secondaryOriginal}` sobre fondos oscuros
 
-## Etiquetas
+### Etiquetas
 - Fuente: Oscine Trial (400 italic) `{typography.small}`
 - Fondo: `{colors.surfaceVariant}` (Cuarzo oscuro) — `{components.tag}`
 - Esquinas: 0px
 
-## Componentes en general
+### Componentes en general
 **Todos**: Esquinas rectas (0px), estética geométrica, directo, alto contraste.
 
-# Do's and Don'ts
+## Do's and Don'ts
 
-## ✅ Do's
+### ✅ Do's
 - Usar `{colors.primary}` (Azul Egipcio) como color principal para títulos y elementos de mayor jerarquía
 - Usar `{colors.secondary}` (Brisa Oceánica ajustada) para subtítulos, categorías, estados activos y énfasis en fondos claros
 - Usar `{colors.secondaryOriginal}` (Brisa Oceánica original) solo sobre fondos oscuros
@@ -521,7 +531,7 @@ Superposición de ilustraciones, estrellas, gráficos y recursos ornamentales ma
 - Permitir composiciones asimétricas y elementos ornamentales que sobresalgan de la retícula cuando refuercen el carácter experimental
 - Implementar estados hover mediante cambios de color y cambios de escala
 
-## ❌ Don'ts
+### ❌ Don'ts
 - No utilizar colores cálidos ni opacos
 - No combinar colores que reduzcan contraste o dificulten lectura
 - No utilizar tipografías fuera del sistema establecido (Gill Sans Display, Oscine Trial, Open Sauce Two)

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const targets = ['index.html', 'melanie_design_system.html'];
+const targets = ['index.html', 'melanie_design_system.html', 'design.html'];
 let missingReferences = 0;
 
 for (const target of targets) {
